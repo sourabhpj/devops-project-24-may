@@ -24,7 +24,7 @@ pipeline {
             steps {
                 sh 'docker stop my-web-app || true'
                 sh 'docker rm my-web-app || true'
-                sh 'docker run -d --name my-web-app-container -p 80:80 sourabhpj94/my-web-app'
+                sh 'docker run -d --name my-web-app -p 80:80 sourabhpj94/my-web-app'
             }
         }
     }
